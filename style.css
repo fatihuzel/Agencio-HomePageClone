@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* header */
+
+header {
+    padding: 10%;
+}
+
+header.bg-img {
+    background-image: url(images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+header button.button-one:hover {
+    background: #212529;
+    color: #0d6efd;
+    border: none;
+}
+
+header button.button-two:hover {
+    background: #fff;
+    color: #0d6efd;
+    border: none;
+}
+
+/* horizontal cards */
+
+section .horizontal-cards {
+    margin-top: -75px;
+    box-shadow: 1px 1px 10px rgba(34, 33, 33, 0.02);
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+
+section .card:hover {
+    margin-top: -3px;
+}
+
+@media(max-width: 767.98px) {
+    section .horizontal-cards {
+        margin-top: 0px;
+    }
+}
+
+/* pricing */
+
+.prices button {
+    background: #212529;
+    transition: all 0.3s ease-in-out;
+}
+
+.prices button:hover {
+    background: #0d6efd;
+}
+
+.prices li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.prices li i {
+    color: #0d6efd;
+}
+
+/* team */
+
+section .teams p {
+    font-size: 14px;
+}
+
+section .teams i:hover {
+    color: #0d6efd;
+}
+
+/* carousel area */
+
+section .carousel-caption h5 {
+    font-size: 15px;
+}
+
+section .carousel-caption p {
+    font-size: 13px;
+}
+
+section .pattern-one {
+    position: absolute;
+    width: 120px;
+    height: 223px;
+    background: radial-gradient(circle, #dee2e6 15%, transparent 26%);
+    background-size: 1em 1em;
+    background-color: #f9f9f9;
+}
+
+section .pattern-two {
+    position: absolute;
+    width: 120px;
+    height: 223px;
+    background: radial-gradient(circle, #dee2e6 15%, transparent 26%);
+    background-size: 1em 1em;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 767.98px) {
+    section .pattern-one,
+    section .pattern-two {
+        opacity: 0;
+    }
+}
+
+/* projects */
+
+section .projects button {
+    border: none;
+    border: 1px solid #c4c2c2;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+section .projects button:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+
