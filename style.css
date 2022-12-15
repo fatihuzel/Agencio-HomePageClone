@@ -7,8 +7,14 @@ body {
 /* Header */
 
 header {
-    padding: 10%;
+    padding: 15%;
 }
+
+/* header.bg-img {
+    position: absolute;
+    background: #0d6efd;
+    opacity: 0.2;
+} */
 
 header.bg-img {
     background-image: url(images/hero-bg.jpg);
@@ -16,18 +22,25 @@ header.bg-img {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    position: absolute;
+    background-color: #0d6efd;
+}
+
+header button.button-one,
+header button.button-two {
+    border: none;
+    transition: .4s ease-in-out;
 }
 
 header button.button-one:hover {
     background: #212529;
     color: #0d6efd;
-    border: none;
 }
 
 header button.button-two:hover {
     background: #fff;
     color: #0d6efd;
-    border: none;
+    
 }
 
 /* Horizontal Cards */
@@ -47,6 +60,14 @@ section .card:hover {
 @media(max-width: 767.98px) {
     section .horizontal-cards {
         margin-top: 0px;
+    }
+}
+
+/* Stats */
+
+@media (max-width: 991.98px) {
+    section .stats h2 {
+        font-size: 24px;
     }
 }
 
@@ -70,7 +91,7 @@ section .card:hover {
     color: #0d6efd;
 }
 
-/* team */
+/* Team */
 
 section .teams p {
     font-size: 14px;
@@ -129,7 +150,7 @@ section .projects button:hover {
     color: #fff;
 }
 
-section .parent {
+/* section .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -159,7 +180,7 @@ section .div5 {
 
 section .div6 {
     grid-area: 2 / 3 / 3 / 4;
-}
+} */
 
 
 /* Blogs */
@@ -331,6 +352,7 @@ footer .footer-down button:hover {
 }
 
 @media (max-width: 767.98px) {
+    footer .footer-right:nth-child(1),
     footer .footer-right:nth-child(2) {
         padding-top: 24px;
     }
@@ -338,4 +360,17 @@ footer .footer-down button:hover {
     footer .footer-down input::placeholder {
         text-align: center;
     }
+}
+
+/* Home Return */
+section.return {
+    background: #690dfd;
+    right: 50px;
+    bottom: 50px;
+    transition: .3s ease-in-out;
+}
+
+section.return:hover {
+    background: #081828;
+    color: #fff;
 }
