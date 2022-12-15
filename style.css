@@ -4,26 +4,79 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+#mainNavbar {
+    background-color: #690dfd;
+}
+
+nav .navbar-nav li a {
+    color: #000000;
+    font-weight: 600;
+    transition: .3s ease-in;
+}
+
+nav .navbar-nav li a:hover {
+    color: #d8d8d8;
+}
+
+@media(min-width:992px) {
+    #mainNavbar {
+        background: transparent;
+    }
+
+    #mainNavbar.navbar-mobile {
+        background-color: #690dfd;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #mainNavbar .collapse-down {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 24px;
+    }
+}
+
 /* Header */
 
 header {
     padding: 15%;
 }
 
-/* header.bg-img {
-    position: absolute;
-    background: #0d6efd;
-    opacity: 0.2;
-} */
-
-header.bg-img {
+header {
     background-image: url(images/hero-bg.jpg);
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    width: 100%;
+    height: 100%;
     position: absolute;
-    background-color: #0d6efd;
+    background: #0d6efd;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+header .container {
+    position: relative;
+}
+
+header .container p:first-child {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+header .container p.sub {
+    font-size: 15px;
+}
+
+header .container h1{
+    font-size: 40px;
+    font-weight: 800;
 }
 
 header button.button-one,
@@ -43,6 +96,12 @@ header button.button-two:hover {
     
 }
 
+@media (max-width: 991.98px) {
+    header .container h1{
+        font-size: 24px;
+    }
+}
+
 /* Horizontal Cards */
 
 section .horizontal-cards {
@@ -50,6 +109,10 @@ section .horizontal-cards {
     box-shadow: 1px 1px 10px rgba(34, 33, 33, 0.02);
     -webkit-transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
     transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+
+section .horizontal-cards p {
+    font-size: 14px;
 }
 
 section .card:hover {

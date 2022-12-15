@@ -27,3 +27,22 @@ for (let i = 0; i < BtnCanvas.length; i++) {
     document.querySelector('[data-bs-dismiss="offcanvas"]').click();
   });
 }
+
+// $(function() {
+//     $(window).scroll(function(){
+//         if($(this).scrollTop() >5){
+//             $(".navbar-brand img").attr("src", "images/white-logo.svg");
+//         }
+//         else {
+//             $(".navbar-brand img").attr("src", "images/logo.png");
+//         }
+//     })
+// })
+
+// $(window).scroll(function (event) {
+//     if ($(window).scrollTop() <= 0) {
+//     	$("#test").attr("src","images/white-logo.svg");
+//     } else {
+//     	$("#test").attr("src","images/logo.png");
+//     }
+// });
