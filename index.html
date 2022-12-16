@@ -140,7 +140,7 @@
 
     <!-- Features -->
     <section>
-        <div class="container py-5">
+        <div class="container feature">
             <div class="row text-center py-4 col-lg-8 m-auto">
                 <h6 class="fw-semibold text-primary">FEATURES</h6>
                 <h2 class="fw-bolder">We Are Creative Dreamers And Innovators</h2>
@@ -236,7 +236,7 @@
 
     <!-- Pricing -->
     <section class="bg-light">
-        <div class="container py-5">
+        <div class="container price">
             <div class="text-center py-4 col-lg-8 m-auto">
                 <h6 class="fw-semibold text-primary">PRICING</h6>
                 <h2 class="fw-bold text-dark">Pricing Plan</h2>
@@ -354,7 +354,7 @@
 
     <!-- Team -->
     <section>
-        <div class="container py-5">
+        <div class="container team">
             <div class="text-center py-4 col-lg-8 m-auto">
                 <h6 class="fw-semibold text-primary">TEAM</h6>
                 <h2 class="fw-bold text-dark">Meat Our Team</h2>
@@ -415,7 +415,7 @@
     <section class="bg-light position-relative">
         <div src="" alt="" class="pattern-one top-0 end-0"></div>
         <div src="" alt="" class="pattern-two bottom-0 start-0"></div>
-        <div class="container p-5" >
+        <div class="container p-5 col-md-8 col-lg-6" >
             <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators mb-0">
                     <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="bg-primary active"
@@ -427,7 +427,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" style="height: 350px;">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center mb-5 mb-sm-0">
                         <img src="/images/brand2.svg" alt=".." style="height: 70px;" class="img-fluid mb-4">
                         <p class="fw-semibold">"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has"</p>
                         </div>
@@ -473,7 +473,7 @@
 
     <!-- Services -->
     <section class="bg-primary">
-        <div class="container py-5 p-sm-5 text-white">
+        <div class="container services text-white">
             <div class="row text-center py-4 col-lg-8 m-auto">
                 <h6 class="fw-semibold ">SERVICES</h6>
                 <h2 class="fw-bolder">What We'll Do</h2>
@@ -546,47 +546,102 @@
 
     <!-- Projects -->
     <section>
-        <div class="container p-5">
+        <div class="container project">
             <div class="row text-center py-4 col-lg-8 m-auto">
                 <h6 class="fw-semibold text-primary">PROJECTS</h6>
                 <h2 class="fw-bolder">Our Latest Cases</h2>
                 <p class="fw-normal text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
             </div>
             <div class="col-12">
-                <div class="container projects text-center pt-3 pb-5">
-                    <button type="button" class="marketing bg-primary active text-white rounded-5 px-3 py-2 me-2">Show All</button>
-                    <button type="button" class="marketing bg-white rounded-5 px-3 py-2 me-2">Marketing</button>
-                    <button type="button" class="marketing bg-white rounded-5 px-3 py-2 me-2">Business</button>
-                    <button type="button" class="marketing bg-white rounded-5 px-3 py-2 me-2">Finance</button>
-                    <button type="button" class="marketing bg-white rounded-5 px-3 py-2">Consulting</button>
+                <div class="container projects flex-wrap text-center pt-3 pb-5">
+                    <button type="button" class="bg-primary active text-white rounded-5 px-3 py-2 me-2">Show All</button>
+                    <button type="button" data-filter=".marketing" class="rounded-5 px-3 py-2 me-2">Marketing</button>
+                    <button type="button" data-filter=".business" class="rounded-5 px-3 py-2 me-2">Business</button>
+                    <button type="button" data-filter=".finance" class="rounded-5 px-3 py-2 me-2 mt-3 mt-sm-0">Finance</button>
+                    <button type="button" data-filter=".consulting" class="rounded-5 px-3 py-2 mt-3 mt-md-0">Consulting</button>
                 </div>
             </div>
-            <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 flex-wrap d-grid">
-                <img src="/images/pf-1.jpg" alt=".." class="img-fluid ">
-                <img src="/images/pf-2.jpg" alt=".." class="img-fluid ">
-                <img src="/images/pf-3.jpg" alt=".." class="img-fluid ">
-                <img src="/images/pf-4.jpg" alt=".." class="img-fluid ">
-                <img src="/images/pf-5.jpg" alt=".." class="img-fluid ">
-                <img src="/images/pf-6.jpg" alt=".." class="img-fluid ">
-            </div> -->
-            <!-- <div class="parent" >
-                <div class="div1"> 
-                    <div >
-                        <img src="/images/pf-1.jpg" alt=".." class="img-fluid ">
+            <div class="parent pb-5" >
+                <div class="div1 ">
+                    <div class="info-hover p-4 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-dark mb-3">Marketing</h6>
+                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Stock Market Analysis</a>
+                        </div>
+                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                        </a>
                     </div>
+                    <img src="/images/pf-1.jpg" alt=".." class="img-fluid ">
                 </div>
-                <div class="div2"> <img src="/images/pf-2.jpg" alt=".." class="img-fluid "></div>
-                <div class="div3"><img src="/images/pf-3.jpg" alt=".." class="img-fluid "></div>
-                <div class="div4"> <img src="/images/pf-4.jpg" alt=".." class="img-fluid "></div>
-                <div class="div5"> <img src="/images/pf-5.jpg" alt=".." class="img-fluid "></div>
-                <div class="div6"> <img src="/images/pf-6.jpg" alt=".." class="img-fluid "></div>
-            </div> -->
+                <div class="div2 marketing">
+                    <div class="info-hover p-4 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-dark mb-3">Business</h6>
+                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Sales Analysis</a>
+                        </div>
+                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                        </a>
+                    </div>
+                    <img src="/images/pf-2.jpg" alt=".." class="img-fluid ">
+                </div>
+                <div class="div3 marketing">
+                    <div class="info-hover p-4 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-dark mb-3">Marketing</h6>
+                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Stock Investments</a>
+                        </div>
+                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                        </a>
+                    </div>
+                    <img src="/images/pf-3.jpg" alt=".." class="img-fluid ">
+                </div>
+                <div class="div4 business">
+                    <div class="info-hover p-4 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-dark mb-3">Business</h6>
+                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Big Data Services</a>
+                        </div>
+                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                        </a>
+                    </div> 
+                    <img src="/images/pf-4.jpg" alt=".." class="img-fluid ">
+                </div>
+                <div class="div5 finance">
+                    <div class="info-hover p-4 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-dark mb-3">Finance</h6>
+                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Sales Enablement</a>
+                        </div>
+                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                        </a>
+                    </div> 
+                    <img src="/images/pf-5.jpg" alt=".." class="img-fluid ">
+                </div>
+                <div class="div6 consulting">
+                    <div class="info-hover p-4 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-dark mb-3">Consulting</h6>
+                            
+                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Consulting Services</a>
+                        </div>
+                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                        </a>
+                    </div>  
+                    <img src="/images/pf-6.jpg" alt=".." class="img-fluid ">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Blogs -->
     <section class="bg-light">
-        <div class="container p-2 blog">
+        <div class="container blog">
             <div class="row text-center py-4 col-lg-8 m-auto">
                 <h6 class="fw-semibold text-primary">BLOGS</h6>
                 <h2 class="fw-bolder text-dark">Our Latest News</h2>
@@ -594,8 +649,10 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 mb-3">
                 <div class="col">
-                    <div class="card card-inner">
+                    <div class="card shadow inner">
+                        <div class="card-inner">
                         <img src="/images/blog-1.jpg" class="img-fluid card-img-top" alt="..">
+                        </div>
                         <div class="card-body m-3 p-2">
                             <a href="#" class="text-decoration-none">
                                 <h6 class="card-title text-primary">Blog</h6>
@@ -620,8 +677,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-inner">
-                        <img src="/images/blog-2.jpg" class="img-fluid card-img-top" alt="..">
+                    <div class="card shadow inner">
+                        <div class="card-inner">
+                            <img src="/images/blog-2.jpg" class="img-fluid card-img-top" alt="..">
+                        </div>
                         <div class="card-body m-3 p-2">
                             <a href="#" class="text-decoration-none">
                                 <h6 class="card-title text-primary">Video</h6>
@@ -646,8 +705,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-inner">
-                        <img src="/images/blog-3.jpg" class="img-fluid card-img-top" alt=".." >
+                    <div class="card shadow inner">
+                        <div class="card-inner">
+                            <img src="/images/blog-3.jpg" class="img-fluid card-img-top" alt="..">
+                        </div>
                         <div class="card-body m-3 p-2 p-2">
                             <a href="#" class="text-decoration-none">
                                 <h6 class="card-title text-primary">Marketing</h6>
