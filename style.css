@@ -7,17 +7,23 @@ body {
 /* Navbar */
 
 #mainNavbar {
-    background-color: #690dfd;
+    background-color: #0d6efd;
 }
 
-nav .navbar-nav li a {
-    color: #000000;
+nav .navbar-nav li a,
+nav #dropdown-menus .dropdown-menu .dropdown-item {
+    color: #000;
     font-weight: 600;
     transition: .3s ease-in;
 }
 
-nav .navbar-nav li a:hover {
-    color: #d8d8d8;
+nav .navbar-nav li a:hover,
+nav #dropdown-menus .dropdown-menu .dropdown-item:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+nav #dropdown-menus .dropdown-menu .dropdown-item {
+    background: none;
 }
 
 @media(min-width:992px) {
@@ -26,13 +32,13 @@ nav .navbar-nav li a:hover {
     }
 
     #mainNavbar.navbar-mobile {
-        background-color: #690dfd;
+        background-color: #0d6efd;
     }
 }
 
 @media (max-width: 991.98px) {
     #mainNavbar .collapse-down {
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 10px;
         padding: 24px;
     }
@@ -76,7 +82,7 @@ header .container p.sub {
     font-size: 15px;
 }
 
-header .container h1{
+header .container h1 {
     font-size: 40px;
     font-weight: 800;
 }
@@ -95,11 +101,11 @@ header button.button-one:hover {
 header button.button-two:hover {
     background: #fff;
     color: #0d6efd;
-    
+
 }
 
 @media (max-width: 991.98px) {
-    header .container h1{
+    header .container h1 {
         font-size: 24px;
     }
 }
@@ -213,6 +219,7 @@ section .pattern-two {
 }
 
 @media (max-width: 767.98px) {
+
     section .pattern-one,
     section .pattern-two {
         opacity: 0;
@@ -222,7 +229,7 @@ section .pattern-two {
 /* Projects */
 
 .gallery .gallery-filter .filter-item {
-    color: #000000;
+    color: #000;
     background: #fff;
     font-size: 13px;
     border: 1px solid #d3d3d3;
@@ -263,24 +270,47 @@ section .gallery .parent {
     grid-row-gap: 0px;
 }
 
-section .gallery .div1 {grid-area: 1 / 1 / 2 / 2;display: none;}
-section .gallery .div2 {grid-area: 1 / 2 / 3 / 3;display: none;}
-section .gallery .div3 {grid-area: 1 / 3 / 2 / 4;display: none;}
-section .gallery .div4 {grid-area: 1 / 4 / 3 / 5;display: none;}
-section .gallery .div5 {grid-area: 2 / 1 / 3 / 2;display: none;}
-section .gallery .div6 {grid-area: 2 / 3 / 3 / 4;display: none;}
+section .gallery .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: none;
+}
 
-section .parent .div1,
-section .parent .div2,
-section .parent .div3,
-section .parent .div4,
-section .parent .div5,
-section .parent .div6 {
+section .gallery .div2 {
+    grid-area: 1 / 2 / 3 / 3;
+    display: none;
+}
+
+section .gallery .div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    display: none;
+}
+
+section .gallery .div4 {
+    grid-area: 1 / 4 / 3 / 5;
+    display: none;
+}
+
+section .gallery .div5 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: none;
+}
+
+section .gallery .div6 {
+    grid-area: 2 / 3 / 3 / 4;
+    display: none;
+}
+
+section .gallery .parent .div1,
+section .gallery .parent .div2,
+section .gallery .parent .div3,
+section .gallery .parent .div4,
+section .gallery .parent .div5,
+section .gallery .parent .div6 {
     position: relative;
     display: block;
 }
 
-section .parent .gallery-item-inner {
+section .gallery .parent .gallery-item-inner {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -289,7 +319,7 @@ section .parent .gallery-item-inner {
     transition: opacity ease-in-out 0.5s;
 }
 
-section .parent .gallery-item-inner h6 {
+section .gallery .parent .gallery-item-inner h6 {
     padding: 5px 12px;
     font-size: 13px;
     border: none;
@@ -298,14 +328,14 @@ section .parent .gallery-item-inner h6 {
     width: 86.5px;
 }
 
-section .parent .gallery-item-inner .a-down {
+section .gallery .parent .gallery-item-inner .a-down {
     background-color: #fff;
     width: 40px;
     height: 40px;
     text-align: center;
 }
 
-section .parent .gallery-item-inner .a-sub a:hover {
+section .gallery .parent .gallery-item-inner .a-sub a:hover {
     opacity: .8;
 }
 
@@ -514,6 +544,7 @@ footer .footer-down button:hover {
 }
 
 @media (max-width: 991.98px) {
+
     footer .footer-right:nth-child(3),
     footer .footer-right:nth-child(4) {
         padding-top: 24px;
@@ -521,6 +552,7 @@ footer .footer-down button:hover {
 }
 
 @media (max-width: 767.98px) {
+
     footer .footer-right:nth-child(1),
     footer .footer-right:nth-child(2) {
         padding-top: 24px;
@@ -546,6 +578,7 @@ section.return:hover {
 
 /* General */
 @media (min-width: 500px) {
+
     section .gallery,
     section .services,
     section .team,
