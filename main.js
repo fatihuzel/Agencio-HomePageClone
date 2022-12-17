@@ -28,21 +28,24 @@ for (let i = 0; i < BtnCanvas.length; i++) {
   });
 }
 
-// $(function() {
-//     $(window).scroll(function(){
-//         if($(this).scrollTop() >5){
-//             $(".navbar-brand img").attr("src", "images/white-logo.svg");
-//         }
-//         else {
-//             $(".navbar-brand img").attr("src", "images/logo.png");
-//         }
-//     })
-// })
+const imageGallery = document.querySelector('#img-filter');
+const filterOptions = imageGallery.querySelectorAll('.filter-options button');
+const parentinner = document.querySelectorAll('[data-category]');
 
-// $(window).scroll(function (event) {
-//     if ($(window).scrollTop() <= 0) {
-//     	$("#test").attr("src","images/white-logo.svg");
+// const showImages = category => {
+//   parentinner.forEach(image => {
+//     if (image.getAttribute('data-category') === category || category === 'all') {
+//       image.style.display = 'block';
 //     } else {
-//     	$("#test").attr("src","images/logo.png");
+//       image.style.display = 'none';
 //     }
+//   });
+// }
+
+// filterOptions.forEach(button => {
+//   button.addEventListener('click', () => {
+//     const category = button.getAttribute('data-filter');
+//     showImages(category);
+//   });
 // });
+
