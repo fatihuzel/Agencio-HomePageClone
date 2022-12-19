@@ -188,17 +188,10 @@ section .teams p {
 
 section .teams i:hover {
     color: #0d6efd;
+    cursor: pointer;
 }
 
 /* Carousel Area */
-
-section .carousel-caption h5 {
-    font-size: 15px;
-}
-
-section .carousel-caption p {
-    font-size: 13px;
-}
 
 section .pattern-one {
     position: absolute;
@@ -218,11 +211,29 @@ section .pattern-two {
     background-color: #f9f9f9;
 }
 
+section .carousel-inner .carousel-item {
+    height: 350px;
+}
+
+section .carousel-caption h5 {
+    font-size: 15px;
+}
+
+section .carousel-caption p {
+    font-size: 13px;
+}
+
 @media (max-width: 767.98px) {
 
     section .pattern-one,
     section .pattern-two {
         opacity: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    section .carousel-inner .carousel-item {
+        height: 400px;
     }
 }
 
@@ -232,16 +243,16 @@ section .gallery ul.filters {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0 0 50px 0;
+    padding: 0 0 70px 0;
 }
 
-section .gallery ul.filters > li {
+section .gallery ul.filters>li {
     list-style: none;
     display: inline-block;
     padding-right: 10px;
 }
 
-section .gallery ul.filters > li > a {
+section .gallery ul.filters>li>a {
     display: block;
     color: #0d6efd;
     text-decoration: none;
@@ -251,32 +262,48 @@ section .gallery ul.filters > li > a {
     border-radius: 20px;
     font-size: 13px;
     font-weight: 500;
+    transition: .3s ease-in-out;
 }
 
-section .gallery ul.filters > li > a:hover {
+section .gallery ul.filters>li>a:hover {
     color: #fff;
     background: #0d6efd;
 }
 
-section .gallery ul.filters > li.active > a {
+section .gallery ul.filters>li.active>a {
     color: #fff;
     background: #0d6efd;
 }
 
-section .gallery .card {
+section .gallery .projects .card {
     position: relative;
-    color: #000;
     border-radius: 0;
     border: none;
 }
 
-section .gallery .card:hover {
+section .gallery .projects .card:hover {
     margin-top: 0;
 }
 
 section .gallery .card-head {
     position: relative;
     overflow: hidden;
+}
+
+section .gallery .projects .item .card .card-head img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+section .gallery .projects .item .card:hover .card-head img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 section .gallery .card-hover {
@@ -318,49 +345,6 @@ section .gallery .card-hover .a-sub:hover {
 
 section .gallery .card-head:hover .card-hover {
     opacity: 1;
-}
-
-section .gallery .parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-section .gallery .parent .div1 {grid-area: 1 / 1 / 2 / 2;}
-section .gallery .parent .div2 {grid-area: 1 / 2 / 3 / 3;}
-section .gallery .parent .div3 {grid-area: 1 / 3 / 2 / 4;}
-section .gallery .parent .div4 {grid-area: 1 / 4 / 3 / 5;}
-section .gallery .parent .div5 {grid-area: 2 / 1 / 3 / 2;}
-section .gallery .parent .div6 {grid-area: 2 / 3 / 3 / 4;}
-
-@media (max-width: 991.98px) {
-    section .gallery .parent {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    }
-
-    section .gallery .parent .div1 { grid-area: 1 / 1 / 2 / 2; }
-    section .gallery .parent .div2 { grid-area: 1 / 2 / 3 / 3; }
-    section .gallery .parent .div3 { grid-area: 2 / 1 / 3 / 2; }
-    section .gallery .parent .div4 { grid-area: 3 / 1 / 5 / 2; }
-    section .gallery .parent .div5 { grid-area: 3 / 2 / 4 / 3; }
-    section .gallery .parent .div6 { grid-area: 4 / 2 / 5 / 3; }
-}
-
-@media (max-width: 767.98px) {
-    section .gallery .parent {
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(8, 1fr);
-    }
-
-    section .gallery .parent .div1 { grid-area: 1 / 1 / 2 / 3; }
-    section .gallery .parent .div2 { grid-area: 2 / 1 / 4 / 3; }
-    section .gallery .parent .div3 { grid-area: 4 / 1 / 5 / 3; }
-    section .gallery .parent .div4 { grid-area: 5 / 1 / 7 / 3; }
-    section .gallery .parent .div5 { grid-area: 7 / 1 / 8 / 3; }
-    section .gallery .parent .div6 { grid-area: 8 / 1 / 9 / 3; }
 }
 
 /* Blogs */
@@ -464,6 +448,7 @@ footer .footer-left p {
 footer .footer-left i {
     margin-right: 21px;
     margin-bottom: 21px;
+    cursor: pointer;
 }
 
 footer .footer-right h3 {

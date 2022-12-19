@@ -13,8 +13,6 @@
 </head>
 
 <body id="page-body">
-
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
         <div class="container py-2">
@@ -435,9 +433,9 @@
                         class="bg-primary" aria-current="true"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" style="height: 350px;">
+                    <div class="carousel-item active">
                         <div class="col-12 text-center mb-5 mb-sm-0">
-                            <img src="/images/brand2.svg" alt=".." style="height: 70px;" class="img-fluid mb-4">
+                            <img src="/images/brand2.svg" alt=".." style="height: 70px;" class="img-fluid mb-4 ">
                             <p class="fw-semibold">"It is a long established fact that a reader will be distracted by
                                 the readable content of a page when looking at its layout. The point of using Lorem
                                 Ipsum is that it has"</p>
@@ -451,7 +449,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" style="height: 350px;">
+                    <div class="carousel-item">
                         <div class="col-12 text-center">
                             <img src="/images/brand1.svg" alt=".." style="height: 70px;" class="img-fluid mb-4">
                             <p class="fw-semibold">"It is a long established fact that a reader will be distracted by
@@ -467,7 +465,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" style="height: 350px;">
+                    <div class="carousel-item">
                         <div class="col-12 text-center">
                             <img src="/images/brand3.svg" alt=".." style="height: 70px;" class="img-fluid mb-4">
                             <p class="fw-semibold">"It is a long established fact that a reader will be distracted by
@@ -572,7 +570,7 @@
                 <p class="fw-normal text-muted">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form.</p>
             </div>
-            <div class="row pb-5gi">
+            <div class="row pb-5">
                 <div class="col-lg-12">
                     <ul class="filters text-center">
                         <li class="active" data-filter="*"><a href="#">Show All</a></li>
@@ -581,9 +579,9 @@
                         <li data-filter=".finance"><a href="#">Finance</a></li>
                         <li data-filter=".consulting"><a href="#" class="mt-3 mt-lg-0">Consulting</a></li>
                     </ul>
-                    <div class="projects">
-                        <div class="row g-0 row-cols-1 row-cols-lg-4">
-                            <div class="col div1 item marketing">
+                    <div class="projects ">
+                        <div class="row grid g-0 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                            <div class="item marketing">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="/images/pf-1.jpg " alt="" class="img-fluid">
@@ -602,10 +600,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col div2 item business">
+                            <div class="item business">
                                 <div class="card">
                                     <div class="card-head">
-                                        <img src="/images/pf-2.jpg " alt="" class="img-fluid">
+                                        <img src="/images/pf-3.jpg " alt="" class="img-fluid">
                                         <div class="card-hover p-4 d-flex flex-column justify-content-between">
                                             <div class="d-flex flex-column">
                                                 <h6 class="text-dark mb-3">Business</h6>
@@ -620,43 +618,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col div3 item marketing">
-                                <div class="card">
-                                    <div class="card-head">
-                                        <img src="/images/pf-3.jpg " alt="" class="img-fluid">
-                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
-                                            <div class="d-flex flex-column">
-                                                <h6 class="text-dark mb-3">Marketing</h6>
-                                                <a href="#"
-                                                    class="a-sub text-white text-decoration-none fw-semibold">Stock
-                                                    Investments</a>
-                                            </div>
-                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col div4 item business">
-                                <div class="card">
-                                    <div class="card-head">
-                                        <img src="/images/pf-4.jpg " alt="" class="img-fluid">
-                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
-                                            <div class="d-flex flex-column">
-                                                <h6 class="text-dark mb-3">Business</h6>
-                                                <a href="#"
-                                                    class="a-sub text-white text-decoration-none fw-semibold">Big Data
-                                                    Services</a>
-                                            </div>
-                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col div5 item finance">
+                            <div class="item finance business">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="/images/pf-5.jpg " alt="" class="img-fluid">
@@ -674,7 +636,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col div6 item consulting">
+                            <div class="item consulting finance">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="/images/pf-6.jpg " alt="" class="img-fluid">
@@ -819,7 +781,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="">
+    <footer>
         <div class="container px-3 py-5">
             <div class="row d-flex justify-content-between text-center text-md-start">
                 <div class="col-12 col-md-4 col-lg-3 footer-left me-3">
@@ -835,7 +797,7 @@
                         <i class="lni lni-youtube"></i>
                         <i class="lni lni-pinterest"></i>
                     </div>
-                    <p class="pt-3">Designed and Developed by <span> GrayGrids</span></p>
+                    <p class="pt-3">Designed and Developed by <span style="cursor: pointer;"> GrayGrids</span></p>
                 </div>
                 <div class="d-flex flex-wrap col-md-7 col-lg-8 row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <div class="col footer-right">
@@ -908,22 +870,50 @@
     <script src="https://code.jquery.com/jquery-3.6.2.js"
         integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript">
         (function () {
             'use strict';
 
             var $projects = $('.projects');
+
+            // Initialize isotope
             $projects.isotope({
                 itemSelector: '.item',
                 layoutMode: 'fitRows'
             });
-            $('ul.filters > li').on('click', function (e) {
 
+            // Handle filter button clicks
+            $('ul.filters > li').on('click', function (e) {
                 e.preventDefault();
                 var filter = $(this).attr('data-filter');
                 $('ul.filters > li').removeClass('active');
                 $(this).addClass('active');
                 $projects.isotope({ filter: filter });
+            });
+
+            // Initialize imagesLoaded plugin
+            imagesLoaded('.gallery', function () {
+                var elem = document.querySelector('.grid');
+
+                // Initialize Isotope
+                var iso = new Isotope(elem, {
+                    itemSelector: '.item',
+                    masonry: {
+                        columnWidth: '.item'
+                    }
+                });
+
+                // Handle filter button clicks
+                let filterButtons = document.querySelectorAll('.filters button');
+                filterButtons.forEach(e =>
+                    e.addEventListener('click', () => {
+                        let filterValue = event.target.getAttribute('data-filter');
+                        iso.arrange({
+                            filter: filterValue
+                        });
+                    })
+                );
             });
         })(jQuery);
     </script>
