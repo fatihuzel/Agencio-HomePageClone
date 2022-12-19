@@ -228,41 +228,99 @@ section .pattern-two {
 
 /* Projects */
 
-.gallery .gallery-filter .filter-item {
-    color: #000;
-    background: #fff;
-    font-size: 13px;
-    border: 1px solid #d3d3d3;
+section .gallery ul.filters {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+
+section .gallery ul.filters > li {
+    list-style: none;
     display: inline-block;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    padding-right: 10px;
+}
+
+section .gallery ul.filters > li > a {
+    display: block;
+    color: #0d6efd;
+    text-decoration: none;
+    padding: 5px 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    font-size: 13px;
     font-weight: 500;
 }
 
-.gallery .gallery-filter .filter-item.active {
-    color: white;
+section .gallery ul.filters > li > a:hover {
+    color: #fff;
     background: #0d6efd;
 }
 
-.gallery .gallery-item.show {
-    animation: fadeIn 0.5s ease;
+section .gallery ul.filters > li.active > a {
+    color: #fff;
+    background: #0d6efd;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+section .gallery .card {
+    position: relative;
+    color: #000;
+    border-radius: 0;
+    border: none;
 }
 
-.gallery .gallery-item.hide {
-    display: none;
+section .gallery .card:hover {
+    margin-top: 0;
 }
 
-.parent {
+section .gallery .card-head {
+    position: relative;
+    overflow: hidden;
+}
+
+section .gallery .card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    box-sizing: border-box;
+    transition: ease-in-out 0.5s;
+    background: rgba(161, 0, 161, 0.75);
+    opacity: 0;
+}
+
+section .gallery .card-hover h6 {
+    padding: 5px 12px;
+    font-size: 13px;
+    border: none;
+    background: #fff;
+    border-radius: 13px;
+    width: 95px;
+    text-align: center;
+}
+
+section .gallery .card-hover .a-down {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+section .gallery .card-hover .a-sub:hover {
+    opacity: .8;
+}
+
+section .gallery .card-head:hover .card-hover {
+    opacity: 1;
+}
+
+section .gallery .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -270,114 +328,40 @@ section .pattern-two {
     grid-row-gap: 0px;
 }
 
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
+section .gallery .parent .div1 {grid-area: 1 / 1 / 2 / 2;}
+section .gallery .parent .div2 {grid-area: 1 / 2 / 3 / 3;}
+section .gallery .parent .div3 {grid-area: 1 / 3 / 2 / 4;}
+section .gallery .parent .div4 {grid-area: 1 / 4 / 3 / 5;}
+section .gallery .parent .div5 {grid-area: 2 / 1 / 3 / 2;}
+section .gallery .parent .div6 {grid-area: 2 / 3 / 3 / 4;}
 
-.div2 {
-    grid-area: 1 / 2 / 3 / 3;
-}
-
-.div3 {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-.div4 {
-    grid-area: 1 / 4 / 3 / 5;
-}
-
-.div5 {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.div6 {
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-section .gallery .parent .gallery-item {
-    position: relative; 
-    /* width: 262px;
-    height: 262px; */
-}
-
-/* section .gallery .parent .div1 {    grid-area: 1 / 1 / 2 / 2; }
-
-section .gallery .parent .div2  {    grid-area: 1 / 2 / 3 / 3;}
-
-section .gallery .parent .div3 {    grid-area: 1 / 3 / 2 / 4;}
-
-section .gallery .parent .div4  {    grid-area: 1 / 4 / 3 / 5;}
-
-section .gallery .parent .div5 {    grid-area: 2 / 1 / 3 / 2;}
-
-section .gallery .parent .div6  {    grid-area: 2 / 3 / 3 / 4;} */
-
-section .gallery .parent .gallery-item-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(161, 0, 161, 0.75);
-    opacity: 0;
-    transition: opacity ease-in-out 0.5s;
-}
-
-section .gallery .parent .gallery-item-inner h6 {
-    padding: 5px 12px;
-    font-size: 13px;
-    border: none;
-    background: #fff;
-    border-radius: 13px;
-    width: 86.5px;
-}
-
-section .gallery .parent .gallery-item-inner .a-down {
-    background-color: #fff;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-}
-
-section .gallery .parent .gallery-item-inner .a-sub a:hover {
-    opacity: .8;
-}
-
-section .gallery .parent .gallery-item:hover .gallery-item-inner {
-    opacity: 1;
-}
-
-/* @media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
     section .gallery .parent {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     }
 
-    section .div1 { grid-area: 1 / 1 / 2 / 2; }
-    section .div2 { grid-area: 1 / 2 / 3 / 3; }
-    section .div3 { grid-area: 2 / 1 / 3 / 2; }
-    section .div4 { grid-area: 3 / 1 / 5 / 2; }
-    section .div5 { grid-area: 3 / 2 / 4 / 3; }
-    section .div6 { grid-area: 4 / 2 / 5 / 3; }
+    section .gallery .parent .div1 { grid-area: 1 / 1 / 2 / 2; }
+    section .gallery .parent .div2 { grid-area: 1 / 2 / 3 / 3; }
+    section .gallery .parent .div3 { grid-area: 2 / 1 / 3 / 2; }
+    section .gallery .parent .div4 { grid-area: 3 / 1 / 5 / 2; }
+    section .gallery .parent .div5 { grid-area: 3 / 2 / 4 / 3; }
+    section .gallery .parent .div6 { grid-area: 4 / 2 / 5 / 3; }
 }
 
 @media (max-width: 767.98px) {
     section .gallery .parent {
-    display: grid;
     grid-template-columns: repeat(1fr);
     grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     }
 
-    section .div1 { grid-area: 1 / 1 / 2 / 3; }
-    section .div2 { grid-area: 2 / 1 / 4 / 3; }
-    section .div3 { grid-area: 4 / 1 / 5 / 3; }
-    section .div4 { grid-area: 5 / 1 / 7 / 3; }
-    section .div5 { grid-area: 7 / 1 / 8 / 3; }
-    section .div6 { grid-area: 8 / 1 / 9 / 3; }
-} */
+    section .gallery .parent .div1 { grid-area: 1 / 1 / 2 / 3; }
+    section .gallery .parent .div2 { grid-area: 2 / 1 / 4 / 3; }
+    section .gallery .parent .div3 { grid-area: 4 / 1 / 5 / 3; }
+    section .gallery .parent .div4 { grid-area: 5 / 1 / 7 / 3; }
+    section .gallery .parent .div5 { grid-area: 7 / 1 / 8 / 3; }
+    section .gallery .parent .div6 { grid-area: 8 / 1 / 9 / 3; }
+}
 
 /* Blogs */
 
@@ -532,6 +516,7 @@ footer .footer-down button {
     border-radius: 8px;
     font-size: 15px;
     font-weight: 600;
+    border: none;
 }
 
 footer .footer-down button:hover {
@@ -565,12 +550,14 @@ section.return {
     background: #690dfd;
     right: 50px;
     bottom: 50px;
+    transform: translateY(0);
     transition: .3s ease-in-out;
 }
 
 section.return:hover {
     background: #081828;
     color: #fff;
+    transform: translateY(-3px);
 }
 
 /* General */

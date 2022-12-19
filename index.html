@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
@@ -494,7 +495,8 @@
             <div class="row text-center py-4 col-lg-8 m-auto">
                 <h6 class="fw-semibold ">SERVICES</h6>
                 <h2 class="fw-bolder">What We'll Do</h2>
-                <p class="fw-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                <p class="fw-normal">There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form.</p>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-3 g-4 mb-3">
                 <div class="col">
@@ -570,91 +572,128 @@
                 <p class="fw-normal text-muted">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form.</p>
             </div>
-            <div class="col">
-                <div class="gallery-filter text-center pt-2 pb-5">
-                    <span class="filter-item active rounded-5 px-3 py-2 me-2" data-filter="all">Show All</span>
-                    <span class="filter-item rounded-5 px-3 py-2 me-2" data-filter="marketing">Marketing</span>
-                    <span class="filter-item rounded-5 px-3 py-2 me-2" data-filter="business">Business</span>
-                    <span class="filter-item rounded-5 px-3 py-2 me-2 mt-3 mt-sm-0" data-filter="finance">Finance</span>
-                    <span class="filter-item rounded-5 px-3 py-2 mt-3 mt-md-0" data-filter="consulting">Consulting</span>
-                </div>
-            </div>
-            <div class="row parent pb-5 g-0"> 
-                <div class="gallery-item marketing div1">
-                    <div class="gallery-item-inner p-4 d-flex flex-column justify-content-between">
-                        <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-3">Marketing</h6>
-                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Stock Market
-                                Analysis</a>
+            <div class="row pb-5gi">
+                <div class="col-lg-12">
+                    <ul class="filters text-center">
+                        <li class="active" data-filter="*"><a href="#">Show All</a></li>
+                        <li data-filter=".marketing"><a href="#">Marketing</a></li>
+                        <li data-filter=".business"><a href="#" class="mt-3 mt-sm-0">Business</a></li>
+                        <li data-filter=".finance"><a href="#">Finance</a></li>
+                        <li data-filter=".consulting"><a href="#" class="mt-3 mt-lg-0">Consulting</a></li>
+                    </ul>
+                    <div class="projects">
+                        <div class="row g-0 row-cols-1 row-cols-lg-4">
+                            <div class="col div1 item marketing">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="/images/pf-1.jpg " alt="" class="img-fluid">
+                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-dark mb-3">Marketing</h6>
+                                                <a href="#"
+                                                    class="a-sub text-white text-decoration-none fw-semibold">Stock
+                                                    Market
+                                                    Analysis</a>
+                                            </div>
+                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col div2 item business">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="/images/pf-2.jpg " alt="" class="img-fluid">
+                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-dark mb-3">Business</h6>
+                                                <a href="#"
+                                                    class="a-sub text-white text-decoration-none fw-semibold">Sales
+                                                    Analysis</a>
+                                            </div>
+                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col div3 item marketing">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="/images/pf-3.jpg " alt="" class="img-fluid">
+                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-dark mb-3">Marketing</h6>
+                                                <a href="#"
+                                                    class="a-sub text-white text-decoration-none fw-semibold">Stock
+                                                    Investments</a>
+                                            </div>
+                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col div4 item business">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="/images/pf-4.jpg " alt="" class="img-fluid">
+                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-dark mb-3">Business</h6>
+                                                <a href="#"
+                                                    class="a-sub text-white text-decoration-none fw-semibold">Big Data
+                                                    Services</a>
+                                            </div>
+                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col div5 item finance">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="/images/pf-5.jpg " alt="" class="img-fluid">
+                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-dark mb-3">Finance</h6>
+                                                <a href="#"
+                                                    class="a-sub text-white text-decoration-none fw-semibold">Sales
+                                                    Enablement</a>
+                                            </div>
+                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col div6 item consulting">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="/images/pf-6.jpg " alt="" class="img-fluid">
+                                        <div class="card-hover p-4 d-flex flex-column justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-dark mb-3">Consulting</h6>
+                                                <a href="#"
+                                                    class="a-sub text-white text-decoration-none fw-semibold">Consulting
+                                                    Services</a>
+                                            </div>
+                                            <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
+                                                <i class="lni lni-arrow-right text-primary fw-semibold"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                        </a>
                     </div>
-                    <img src="/images/pf-1.jpg" alt="..">
-                </div>
-                <div class="gallery-item business div2">
-                    <div class="gallery-item-inner p-4 d-flex flex-column justify-content-between">
-                        <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-3">Business</h6>
-                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Sales Analysis</a>
-                        </div>
-                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                        </a>
-                    </div>
-                    <img src="/images/pf-2.jpg" alt="..">
-                </div>
-                <div class="gallery-item marketing div3">
-                    <div class="gallery-item-inner p-4 d-flex flex-column justify-content-between">
-                        <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-3">Marketing</h6>
-                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Stock Investments</a>
-                        </div>
-                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                        </a>
-                    </div>
-                    <img src="/images/pf-3.jpg" alt="..">
-                </div>
-                <div class="gallery-item business div4">
-                    <div class="gallery-item-inner p-4 d-flex flex-column justify-content-between">
-                        <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-3">Marketing</h6>
-                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Big Data
-                            Services</a>
-                        </div>
-                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                        </a>
-                    </div>
-                    <img src="/images/pf-4.jpg" alt="..">
-                </div>
-                <div class="gallery-item finance div5">
-                    <div class="gallery-item-inner p-4 d-flex flex-column justify-content-between">
-                        <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-3">Finance</h6>
-                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Sales
-                            Enablement</a>
-                        </div>
-                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                        </a>
-                    </div>
-                    <img src="/images/pf-5.jpg" alt="..">
-                </div>
-                <div class="gallery-item consulting div6">
-                    <div class="gallery-item-inner p-4 d-flex flex-column justify-content-between">
-                        <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-3">Consulting</h6>
-                            <a href="#" class="a-sub text-white text-decoration-none fw-semibold">Consulting
-                            Services</a>
-                        </div>
-                        <a href="#" class="a-down rounded align-content-center p-2 rounded-circle">
-                            <i class="lni lni-arrow-right text-primary fw-semibold"></i>
-                        </a>
-                    </div>
-                    <img src="/images/pf-6.jpg" alt="..">
                 </div>
             </div>
         </div>
@@ -866,28 +905,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.js"
+        integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript">
-        const filterContainer = document.querySelector(".gallery-filter");
-            const galleryItems = document.querySelectorAll(".gallery-item");
-            filterContainer.addEventListener("click", (event) => {
-                if (event.target.classList.contains("filter-item")) {
-                    // deactivate existing active 'filter-item'
-                    filterContainer.querySelector(".active").classList.remove("active");
-                    // activate new 'filter-item'
-                    event.target.classList.add("active");
-                    const filterValue = event.target.getAttribute("data-filter");
-                    galleryItems.forEach((item) => {
-                        if (item.classList.contains(filterValue) || filterValue === 'all') {
-                            item.classList.remove("hide");
-                            item.classList.add("show");
-                        }
-                        else {
-                            item.classList.remove("show");
-                            item.classList.add("hide");
-                        }
-                    });
-                }
+        (function () {
+            'use strict';
+
+            var $projects = $('.projects');
+            $projects.isotope({
+                itemSelector: '.item',
+                layoutMode: 'fitRows'
             });
+            $('ul.filters > li').on('click', function (e) {
+
+                e.preventDefault();
+                var filter = $(this).attr('data-filter');
+                $('ul.filters > li').removeClass('active');
+                $(this).addClass('active');
+                $projects.isotope({ filter: filter });
+            });
+        })(jQuery);
     </script>
 </body>
+
 </html>

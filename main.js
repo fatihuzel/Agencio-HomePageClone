@@ -35,3 +35,14 @@ for (let i = 0; i < BtnCanvas.length; i++) {
     document.querySelector('[data-bs-dismiss="offcanvas"]').click();
   });
 }
+
+const returnButton = document.querySelector('.return');
+
+window.addEventListener('scroll', function() {
+  var y = window.scrollY;
+  if (y > 0) {
+    returnButton.style.display = 'block';
+  } else {
+    returnButton.style.display = 'none';
+  }
+});
